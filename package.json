@@ -1,6 +1,6 @@
 {
   "name": "acb_pagescroll_indicator",
-  "version": "1.0.0",
+  "version": "2.0.1",
   "description": "page scroll indicator for websites",
   "main": "acb_pagescroll.js",
   "scripts": {

@@ -26,6 +26,16 @@ span{
     animation: pulse-scroll-badge 1.5s infinite;
 }
 
+.scroll_acb_animated::before{
+    content:"";
+    position: absolute;
+    top:0;
+    left:-200%;
+    width:20%;
+    height:100%;
+    background: linear-gradient(to right, rgba(255,255,255,0.055), rgba(255,255,255,0.2), rgba(255,255,255,0.8));
+    animation:acbanimate 8s ease-in infinite;
+}
 
 @keyframes pulse-scroll-badge {
     0%, 100% {
@@ -33,5 +43,14 @@ span{
     }
     50% {
         opacity: 1;
+    }
+}
+@keyframes acbanimate{
+    0%{
+        left:-50%;
+
+    }
+    100%{
+        left:100%;
     }
 }
